@@ -1,5 +1,4 @@
-//import {charId} from "./app";
-
+//This function is to connect with the API
 function getCharacters(id, done) {
 
     const results = fetch(`https://rickandmortyapi.com/api/character/${id}`);
@@ -7,7 +6,7 @@ function getCharacters(id, done) {
         done(data)
     });
 }
-
+//This function  is for print the character selected
 function showMore(charId) {
 
     this.getCharacters(charId, data => {

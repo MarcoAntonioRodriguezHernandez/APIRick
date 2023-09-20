@@ -1,3 +1,4 @@
+//This part is for connect with the API
 function getCharacters(page, mode, random, done) {
     if (mode === 1) {
         const results = fetch(`https://rickandmortyapi.com/api/character/?page=${page}`);
@@ -11,9 +12,8 @@ function getCharacters(page, mode, random, done) {
         });
     }
 }
-
+//This part is for print all characters
 function allCharacters() {
-
     let j = 1;
     for (let i = 1; i < 43; i++) {
         getCharacters(i, 1, 0, data => {
@@ -41,9 +41,8 @@ function allCharacters() {
         });
     }
 }
-
+//This part is for print the 5 random characters
 for (let i = 0; i < 5; i++) {
-
     let random = Math.floor(Math.random() * 826);
     getCharacters(0, 0, random, data => {
         const article = document.createRange().createContextualFragment(/*HTML*/`

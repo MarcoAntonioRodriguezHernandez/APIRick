@@ -1,12 +1,12 @@
+//This function is to connect with the API
 function getCharacters(i, done) {
-
     const results = fetch(`https://rickandmortyapi.com/api/character/?page=${i}`);
     results.then(response => response.json()).then(data => {
         done(data)
     });
 }
 
-
+//This part is for organize the characters by species
 let especies = ['Human', 'Alien', 'Humanoid', 'unknown', 'Poopybutthole', 'Mythological Creature', 'Animal', 'Robot', 'Cronenberg', 'Disease'];
 for (let a = 0; a < 9; a++) {
     for (let i = 1; i <= 42; i++) {
