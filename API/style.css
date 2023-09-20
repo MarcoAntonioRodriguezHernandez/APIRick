@@ -1,24 +1,25 @@
-
-.container{
-
-}
-h1{
+h1 {
     text-align: center;
 }
-main{
+
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 18px;
 }
-.image{
+
+.image {
     display: flex;
 }
-.image img{
+
+.image img {
     width: 100%;
 }
-.showMore{
+
+.showMore {
     text-align: center;
 }
-.tableContainer{
+
+.tableContainer {
     border-color: black;
 }

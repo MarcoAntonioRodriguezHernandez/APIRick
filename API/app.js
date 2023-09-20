@@ -41,6 +41,7 @@ function allCharacters() {
         });
     }
 }
+
 for (let i = 0; i < 5; i++) {
 
     let random = Math.floor(Math.random() * 826);
@@ -60,10 +61,12 @@ for (let i = 0; i < 5; i++) {
         main.appendChild(article);
     });
 }
+
 function redirect(id) {
 
     window.location.href = "showMore.html?character=" + id;
 }
+
 allCharacters()
 
 /*const URL = "https://rickandmortyapi.com/api/character";

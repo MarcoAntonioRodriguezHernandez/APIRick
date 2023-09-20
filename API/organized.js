@@ -15,7 +15,7 @@ for (let a = 0; a < 9; a++) {
                 if (personaje.species === especies[a]) {
                     let article = document.createRange().createContextualFragment(/*html*/
                         `<article>
-                     <div class="image-container">
+                     <div class="image">
                      <img src="${personaje.image}" alt="personaje ${personaje.name}">
                      </div>
                      <h2>${personaje.name}</h2>
